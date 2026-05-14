@@ -1,0 +1,248 @@
+@import "tailwindcss";
+/* ============================= */
+/* BlackGiraffe Global Theme */
+/* ============================= */
+
+:root {
+  --bb-black: #0b0b0b;
+  --bb-dark: #121212;
+  --bb-yellow: #00d1ff;
+  --bb-yellow-dark: #00b8e6;
+  --bb-white: #ffffff;
+  --bb-gray: #a1a1aa;
+  --bb-border: #27272a;
+}
+
+/* ============================= */
+/* Base Styles */
+/* ============================= */
+
+body {
+  background: var(--bb-black);
+  color: var(--bb-white);
+  font-family: "Inter", sans-serif;
+}
+
+::selection {
+  background: #00d1ff;
+  color: black;
+}
+
+/* ============================= */
+/* Container */
+/* ============================= */
+
+.container-bb {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ============================= */
+/* Section Spacing */
+/* ============================= */
+
+.section-bb {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ============================= */
+/* Headings */
+/* ============================= */
+
+.heading-bb {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.subheading-bb {
+  font-size: 20px;
+  color: var(--bb-gray);
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* Buttons */
+/* ============================= */
+
+.btn-bb {
+  background: var(--bb-yellow);
+  color: black;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn-bb:hover {
+  background: var(--bb-yellow-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-bb {
+  border: 1px solid var(--bb-yellow);
+  color: var(--bb-yellow);
+  padding: 12px 26px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.btn-outline-bb:hover {
+  background: var(--bb-yellow);
+  color: black;
+}
+
+/* ============================= */
+/* Cards */
+/* ============================= */
+
+.card-bb {
+  background: var(--bb-dark);
+  border: 1px solid var(--bb-border);
+  padding: 30px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.card-bb:hover {
+  transform: translateY(-5px);
+  border-color: var(--bb-yellow);
+}
+
+/* ============================= */
+/* Cyan Color Utilities */
+/* ============================= */
+
+.text-bb-yellow {
+  color: #00d1ff !important;
+}
+
+.text-bb-yellow-dark {
+  color: #00b8e6 !important;
+}
+
+.bg-bb-yellow {
+  background-color: #00d1ff !important;
+}
+
+.bg-bb-yellow-dark {
+  background-color: #00b8e6 !important;
+}
+
+.bg-bb-yellow-light {
+  background-color: rgba(0, 209, 255, 0.1) !important;
+}
+
+.border-bb-yellow {
+  border-color: #00d1ff !important;
+}
+
+.hover\:text-bb-yellow:hover {
+  color: #00d1ff !important;
+}
+
+.hover\:bg-bb-yellow:hover {
+  background-color: #00d1ff !important;
+}
+
+.hover\:border-bb-yellow:hover {
+  border-color: #00d1ff !important;
+}
+
+/* Support for opacity modifiers */
+.text-bb-yellow\/60 {
+  color: rgba(0, 209, 255, 0.6) !important;
+}
+
+.border-bb-yellow-dark\/20 {
+  border-color: rgba(0, 184, 230, 0.2) !important;
+}
+
+/* ============================= */
+/* Yellow Glow Effect */
+/* ============================= */
+
+.glow-yellow {
+  box-shadow: 0 0 25px rgba(0, 209, 255, 0.25);
+}
+
+/* ============================= */
+/* Gradients */
+/* ============================= */
+
+.gradient-yellow {
+  background: linear-gradient(135deg, #ffc107, #ffda3a);
+}
+
+.gradient-dark {
+  background: linear-gradient(135deg, #0b0b0b, #121212);
+}
+
+/* ============================= */
+/* Text Colors */
+/* ============================= */
+
+.text-yellow {
+  color: var(--bb-yellow);
+}
+
+.text-gray {
+  color: var(--bb-gray);
+}
+
+/* ============================= */
+/* Borders */
+/* ============================= */
+
+.border-bb {
+  border: 1px solid var(--bb-border);
+}
+
+/* ============================= */
+/* Honeycomb Background (Bee Theme) */
+/* ============================= */
+
+.bg-honeycomb {
+  background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.honeycomb-pattern {
+  background-color: #0e0e0e;
+  background-image: radial-gradient(#00b8e6 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  opacity: 0.03;
+}
+
+.gradient-line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #00b8e6 50%,
+    transparent 100%
+  );
+  height: 2px;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.whatsapp-glow {
+  box-shadow: 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: whatsappGlow 2s infinite;
+}
+
+@keyframes whatsappGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}

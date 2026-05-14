@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Transparent Pricing,\nNo Hidden Costs.",
+    "subtitle":
+      "Flexible solutions for every stage of your digital journey."
+  },
+
+  "plans": [
+    {
+      "name": "Starter",
+      "price": "₹999",
+      "domain": true,
+      "domainText": "Free .com domain for 1 year",
+      "highlight": false,
+      "features": [
+        "Single Page Website",
+        "Responsive Design",
+        "SEO Optimization",
+        "Delivery in 48 Hours"
+      ],
+      "cta": "Choose Starter"
+    },
+    {
+      "name": "Pro",
+      "price": "₹1,999",
+      "highlight": true,
+      "domain": true,
+      "domainText": "Free .com domain for 1 year",
+      "tag": "POPULAR",
+      "features": [
+        "Everything in Starter",
+        "Web with 5 Pages",
+        "Scalable Architecture",
+        "Priority Support",
+        "Analytics Integration"
+      ],
+      "cta": "Get Started Now"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "highlight": false,
+      "domain": true,
+      "domainText": "Free .com domain for 1 year",
+      "features": [
+        "Dedicated Architect Team",
+        "Cloud Infrastructure Setup",
+        "Legacy Migration",
+        "SLA Agreements",
+        "Custom Security Audits"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+
+  "contact": {
+    "title": "Need a tailored solution?",
+    "desc": "Connect with us instantly on WhatsApp."
+  }
+}
